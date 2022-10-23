@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog Lovers</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      #upper-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(
+          to right,
+          rgb(223, 245, 253),
+          rgb(252, 252, 232)
+        );
+        height: 130px;
+        margin-top: 2rem;
+      }
+      #dropdown {
+        /* padding-left: 7rem; */
+        padding: 6px;
+      }
+      #getImage-btn {
+        color: white;
+        background-color: green;
+        border: none;
+        border-radius: 8px;
+        padding: 7px;
+      }
+
+      #lower-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 350px;
+        margin-top: 3rem;
+      }
+      #imageCont {
+        height: 350px;
+        width: 500px;
+      }
+      #next-btn {
+        background-color: blue;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 8px;
+        padding: 7px;
+      }
+    </style>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <div id="upper-container">
+      <select id="dropdown">
+        <!-- <option id="option" value=""></option> -->
+      </select>
+      <button id="getImage-btn">Get Image</button>
+    </div>
+
+    <div id="lower-container">
+      <!-- <img id="image"> -->
+      <div id="imageCont"></div>
+      <button id="next-btn">Next &gt;&gt;</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="Dogdetails.js"></script>
+  </body>
+</html>
